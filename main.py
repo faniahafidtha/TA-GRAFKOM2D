@@ -20,11 +20,16 @@ def input(key):
         background.scale /= 1.1 
 
 def update():
-    perahu.x += 0.3 * time.dt
-    if perahu.x > 9:
-       perahu.x = -9  # Kembali ke sebelah kiri layar 
-  
+     perahu.x += 0.3 * time.dt
+     if perahu.x > 9:
+        perahu.x = -9  # Kembali ke sebelah kiri layar
+        
+     pesawat.x += 1.0 * time.dt
+     if pesawat.x > 9:
+        pesawat.x = -9  # Kembali ke sebelah kiri layar
+        
+     burung.x += 0.5 * time.dt
+     burung.y += 0.2 * time.dt
 
-    
-
+        
 app.run()
