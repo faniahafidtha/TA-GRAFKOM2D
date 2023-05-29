@@ -1,5 +1,4 @@
 from ursina import *
-from random import randint
 
 app = Ursina()
 
@@ -31,7 +30,6 @@ def update():
         
      burung.x += 0.5 * time.dt
      burung.y += 0.2 * time.dt
-pass
 
-        
+
 app.run()
